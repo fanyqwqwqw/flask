@@ -12,7 +12,7 @@ def flask_endpoint():
     # Procesar respuesta de Express.js
     if express_response.status_code == 200:
         data = express_response.json()
-        return jsonify({"from_flask": "Hello from Flask!", "express_data": data})
+        return jsonify({"servidor":"render", "link":"https://flask-rhuw.onrender.com/flask", "mensaje": "hola desde Flask!","estado":"éxito", "express_data": data})
     else:
         return jsonify({"error": "Failed to connect to Express.js"}), 500
 
