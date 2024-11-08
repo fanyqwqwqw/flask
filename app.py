@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/flask', methods=['GET'])
 def flask_endpoint():
     # Ejemplo: consulta al servicio Express.js
-    express_url = "http://express-service-url/api/express"
+    express_url = "https://seemly-coral-drink.glitch.me/api/express"
     express_response = requests.get(express_url)
     
     # Procesar respuesta de Express.js
